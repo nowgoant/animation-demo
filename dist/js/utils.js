@@ -199,3 +199,6 @@ utils.intersects = function (rectA, rectB) {
 };
 
 module.exports = utils;
+
+module.exports.requestAnimationFrame = requestAnimationFrame;
+module.exports.cancelAnimationFrame = cancelAnimationFrame;

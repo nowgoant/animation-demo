@@ -31,4 +31,4 @@ Arrow.prototype.draw = function (context) {
     context.restore();
 };
 
-module.exports = Array;
+module.exports = Arrow;

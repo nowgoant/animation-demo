@@ -2,16 +2,12 @@
   "name": "animation-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "babel-loader": "^6.2.0",
-    "webpack": "^1.12.9"
-  },
-  "devDependencies": {
-    "webpack-dev-server": "^1.14.0"
-  },
+  "main": "app/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --hot --content-base build",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +21,13 @@
   "bugs": {
     "url": "https://github.com/nowgoant/animation-demo/issues"
   },
-  "homepage": "https://github.com/nowgoant/animation-demo#readme"
+  "homepage": "https://github.com/nowgoant/animation-demo#readme",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.11.0"
+  },
+  "dependencies": {
+    "webpack-dev-server": "^1.14.0"
+  }
 }
