@@ -1,7 +1,9 @@
 /**
  * Created by nowgoant on 2015/12/18.
  */
+'use strict';
 
+require('./../css/index.css');
 var utils = require('../../dist/js/utils');
 var Arrow = require('./arrow');
 
